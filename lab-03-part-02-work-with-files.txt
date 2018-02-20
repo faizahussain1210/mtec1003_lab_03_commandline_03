@@ -212,3 +212,6 @@ ent-v314-014:other student$ wc -l pg1232.txt
 
 Write the command that you used below.
 ----------
+ent-v314-014:other student$ cp * pg1232.txt. archive
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
