@@ -17,7 +17,8 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 
 What command did you use, and what was its output?
 ----------
-
+ent-v314-014:~ student$ date
+Tue Feb 20 16:45:59 EST 2018
 
 
 ==========
@@ -26,7 +27,14 @@ What command did you use, and what was its output?
 What command did you use, and what was its output?
 ----------
 
-
+ent-v314-014:~ student$ cal
+   February 2018
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28
 
 ==========
 3. Go to your home directory.  Verify that you're in your home directory.
@@ -34,6 +42,9 @@ What command did you use, and what was its output?
 What commands did you use to do this?
 ----------
 
+ent-v314-014:~ student$ cd ~
+ent-v314-014:~ student$ pwd
+/Users/student
 
 
 ==========
@@ -41,6 +52,19 @@ What commands did you use to do this?
 
 What commands did you use to do this?
 ----------
+ent-v314-014:~ student$ touch copy_to_backup.sh
+ent-v314-014:~ student$ ls
+Adlm			New Unity Project	isus
+Adobe			PIZZAMENU.txt		mtec1002
+Applications		Pictures		mtec1002-lab-02
+Creative Cloud Files	Public			mtec1002-lab-02.zip
+Desktop			QLData			mtec1003-lab-03
+Documents		TAco			mtec1003-lab-03.tar.gz
+Downloads		Things			myprojects
+Library			copy_to_backup.sh	pymel.log
+MPLABXProjects		foo			stuff
+Movies			food			xgen
+Music			ipe.properties
 
 
 
@@ -49,15 +73,17 @@ What commands did you use to do this?
 
 What command did you use to find the permissions?
 ----------
-
-
+ent-v314-014:~ student$ ls -l copy_to_backup.sh
+-rw-r--r--  1 student  staff  0 Feb 20 16:47 copy_to_backup.sh
 
 ==========
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
 
 What commands did you use to do this?  What was the output?
 ----------
-
+ent-v314-014:~ student$ chmod u+x copy_to_backup.sh
+ent-v314-014:~ student$ ls -l copy_to_backup.sh
+-rwxr--r--  1 student  staff  0 Feb 20 16:47 copy_to_backup.sh
 
 
 ==========
@@ -67,15 +93,17 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
+ent-v314-014:~ student$ ./copy_to_backup.sh
+ent-v314-014:~ student$ 
 
-
+Nothing happened
 
 ==========
 8. Open the file with nano
 
 What command did you use to do this?
 ----------
-
+ent-v314-014:~ student$ nano copy_to_backup.sh
 
 
 ==========
@@ -89,13 +117,16 @@ Don't forget the first line of your shell script! It should begin with #!/bin/ba
 
 Write out the code in your file below...
 ----------
+ent-v314-014:~ student$ ./copy_to_backup.sh
+I'm done backing up
 
 
 
 ==========
 10. Create a directory in your home called test
 ----------
-
+ent-v314-014:~ student$ cd ~
+ent-v314-014:~ student$ mkdir test
 
 
 ==========
